@@ -8,6 +8,7 @@ import 'package:spotify_clone/core/configs/theme/app_themes.dart';
 import 'package:spotify_clone/firebase_options.dart';
 import 'package:spotify_clone/presentation/intro/bloc/theme_cubit.dart';
 import 'package:spotify_clone/presentation/splash/pages/splash.dart';
+import 'package:spotify_clone/service_locator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +20,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await initializeDependencies();
   runApp(const App());
 }
 
