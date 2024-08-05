@@ -4,4 +4,5 @@ abstract class AppImages {
   static const introBackground = '$_basePath/intro_bg.$_format';
   static const chooseModeBackground = '$_basePath/choose_mode_bg.$_format';
   static const authBackground = '$_basePath/auth_bg.$_format';
+  static const homeArtist = '$_basePath/home_artist.$_format';
 }

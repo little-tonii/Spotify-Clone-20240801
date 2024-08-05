@@ -6,4 +6,5 @@ abstract class AppVectors {
   static const moon = '$_basePath/moon.$_format';
   static const topPattern = '$_basePath/top_pattern.$_format';
   static const bottomPattern = '$_basePath/bottom_pattern.$_format';
+  static const homeTopCard = '$_basePath/home_top_card.$_format';
 }
