@@ -8,9 +8,19 @@ class SongRepositoryImpl implements SongRepository {
   Future<Either> getNewSongs() async {
     return await sl<SongFirebaseService>().getNewSongs();
   }
-  
+
   @override
   Future<Either> getPlayList() async {
     return await sl<SongFirebaseService>().getPlayList();
+  }
+
+  @override
+  Future<Either> addOrRemoveFavoriteSongs(String songId) async {
+    return await sl<SongFirebaseService>().addOrRemoveFavoriteSong(songId);
+  }
+
+  @override
+  Future<bool> isFavoriteSong(String songId) async {
+    return await sl<SongFirebaseService>().isFavoriteSong(songId);
   }
 }

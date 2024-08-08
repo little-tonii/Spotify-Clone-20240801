@@ -49,7 +49,7 @@ class NewSongs extends StatelessWidget {
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image: NetworkImage(
-                                    '${AppUrls.fireStorage}${Uri.encodeComponent(state.songs[index].artist)}%20-%20${Uri.encodeComponent(state.songs[index].title)}.jpg?${AppUrls.medialAlt}',
+                                    '${AppUrls.coverFireStorage}${Uri.encodeComponent(state.songs[index].artist)}%20-%20${Uri.encodeComponent(state.songs[index].title)}.jpg?${AppUrls.medialAlt}',
                                   ),
                                 ),
                               ),
