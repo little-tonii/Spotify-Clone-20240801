@@ -4,9 +4,9 @@ import 'package:spotify_clone/presentation/home/bloc/new_songs_state.dart';
 import 'package:spotify_clone/service_locator.dart';
 
 class NewSongsCubit extends Cubit<NewSongsState> {
-  NewSongsCubit(super.initialState);
+  NewSongsCubit() : super(NewSongsLoading());
 
-  Future<void> getNewSongs() async {
+  void getNewSongs() async {
     final returnedSongs = await sl<GetNewSongsUsecase>().call();
 
     returnedSongs.fold(
